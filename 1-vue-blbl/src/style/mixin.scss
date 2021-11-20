@@ -1,0 +1,18 @@
+$blue: rgb(255, 255, 255);
+//定位左右居中
+@mixin wh($width,$height){
+    width:$width;
+    height:$height;
+}
+@mixin font($size,$line-height,$family:'Microsoft YaHei'){
+    font:#{$size}/#{$line-height} $family;
+}
+@mixin cl {  
+	position: absolute;
+	left: 50%;
+    transform: translateX(-50%);
+}
+@mixin pc($padding-top,$background-color){
+    padding-top:$padding-top;
+    background-color:$background-color;
+}
